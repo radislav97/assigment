@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+       
+       #box {
+            width: 800px;
+            height: 700px;
+            background-color: #050210;
+            margin: auto;
+            position: relative;
+       }
+        
+        #box-1{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            border-radius: 100%;
+            filter: blur(60px);
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            
+            animation-name: my-animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        #box-2{
+            position: absolute;
+            width: 480px;
+            height: 480px;
+            margin: auto;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            border-radius: 100%;
+            filter: blur(2px);
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            
+            animation-name: my-animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+
+
+        #box-3{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            left: 200px;
+            top: 150px;
+         
+            
+           
+            background-color: black;
+            border-radius: 100%;
+        }
+       
+        
+        #box-4{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            left: 200px;
+            top: 150px;
+          
+            
+           
+            background-color: black;
+            border-radius: 100%;
+
+            animation-name: my-animation-2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes my-animation {
+                0%{
+                transform: rotate(0deg);
+            
+            }
+            
+                100%{
+                transform: rotate(360deg);
+               
+            }
+            
+        }
+        @keyframes my-animation-2 {
+           0%{
+               transform: scale(0.2, 0.2);
+               background-color: #121233;
+
+           }
+            
+            
+        }
+        
+        
+                
+        
+        
+       
+    </style>
+</head>
+<body>
+   <div id="box">
+       <div id="box-1"></div>
+       <div id="box-2"></div>
+       <div id="box-3"></div>
+       <div id="box-4"></div>
+   </div>
+</body>
+</html>
